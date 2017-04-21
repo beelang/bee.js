@@ -1,0 +1,45 @@
+{
+  "name": "@beelang/parser",
+  "version": "1.0.0",
+  "description": "A parser for the :bee: language.",
+  "keywords": [
+    "programming",
+    "language",
+    "parser",
+    "🐝"
+  ],
+  "author": "Kurtis Rainbolt-Greene (@krainboltgreene) <kurtis@rainbolt-greene.online>",
+  "license": "ISC",
+  "homepage": "https://github.com/beelang/parser.js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beelang/parser.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/beelang/parser.js/issues"
+  },
+  "main": "transpiled/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "test": "tap --no-coverage --no-coverage-report --no-color --jobs-auto --reporter dot './transpiled/test.js'",
+    "build": "babel './source/' -d './transpiled/'",
+    "lint": "eslint './source/**/index.js'"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.0",
+    "babel-core": "6.24.0",
+    "babel-eslint": "7.2.1",
+    "babel-plugin-transform-object-rest-spread": "6.23.0",
+    "babel-preset-env": "1.4.0",
+    "eslint": "3.18.0",
+    "eslint-plugin-babel": "4.1.1",
+    "eslint-plugin-immutable": "1.0.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-promise": "3.5.0",
+    "tap": "10.3.0"
+  },
+  "dependencies": {
+    "mona": "0.9.1",
+    "ramda": "0.23.0"
+  }
+}
