@@ -26,20 +26,20 @@
     "lint": "eslint './source/**/index.js'"
   },
   "devDependencies": {
-    "babel-cli": "6.24.0",
-    "babel-core": "6.24.0",
-    "babel-eslint": "7.2.1",
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-eslint": "7.2.3",
     "babel-plugin-transform-object-rest-spread": "6.23.0",
-    "babel-preset-env": "1.4.0",
-    "eslint": "3.18.0",
+    "babel-preset-env": "1.5.1",
+    "eslint": "3.19.0",
     "eslint-plugin-babel": "4.1.1",
     "eslint-plugin-immutable": "1.0.0",
-    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-import": "2.3.0",
     "eslint-plugin-promise": "3.5.0",
-    "tap": "10.3.0"
+    "tap": "10.3.2"
   },
   "dependencies": {
     "mona": "0.9.1",
-    "ramda": "0.23.0"
+    "ramda": "0.24.0"
   }
 }

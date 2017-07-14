@@ -1,0 +1,24 @@
+# from(standard/collections)(head)
+# from(standard/collections)(tail)
+
+fold-right:
+  (function) ->
+    (current) ->
+      function-with-current: function(current)
+      (collection) ->
+        remaining: tail(collection)
+        latest: head(collection)
+        if(is-empty(collection))
+          >- function-with-current(latest)
+          >- sage sage(function)(function-with-current(latest))(remaining)
+
+
+profiles: [
+  {
+    name: "kurtis",
+    age: 29,
+  }
+]
+prop("name", prop(0, profiles)))
+
+profiles prop(0) prop("name")
