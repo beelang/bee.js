@@ -1,6 +1,8 @@
 # from(standard/collections)(head)
 # from(standard/collections)(tail)
+# from(standard/collections)(get)
 
+# The fold function
 fold-right:
   (function) ->
     (current) ->
@@ -13,12 +15,13 @@ fold-right:
           >- sage sage(function)(function-with-current(latest))(remaining)
 
 
+# A list of profiles
 profiles: [
   {
     name: "kurtis",
     age: 29,
   }
 ]
-prop("name", prop(0, profiles)))
 
-profiles prop(0) prop("name")
+# Using piping
+profiles | head | get("name")
